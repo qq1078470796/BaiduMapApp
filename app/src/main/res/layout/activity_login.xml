@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asuspc.ManageActivity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/l_password"
+        android:layout_below="@+id/l_password"
+        app:srcCompat="@drawable/huaji" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/huaji"
+        android:layout_below="@+id/l_submit"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/huaji"
+        android:layout_below="@+id/l_submit"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/l_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/l_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/l_username"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l_username"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/huaji"
+        android:layout_below="@+id/l_password"
+        android:layout_alignEnd="@+id/l_password" />
+
+    <Button
+        android:id="@+id/l_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

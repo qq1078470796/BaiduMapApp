@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asuspc.businessOwnerActivity.AddNewBusinessActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:paddingBottom="10dp"
+        android:text="店铺使用者"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="36dp"
+        android:paddingBottom="10dp"
+        android:text="店铺名称"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="38dp"
+        android:paddingBottom="10dp"
+        android:text="店铺地址"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="46dp"
+        android:paddingBottom="10dp"
+        android:text="联系方式"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/ba_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView9"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ba_business_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ba_username"
+        android:layout_alignTop="@+id/textView8"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ba_business_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ba_business_name"
+        android:layout_alignTop="@+id/textView7"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ba_business_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ba_business_address"
+        android:layout_alignTop="@+id/textView6"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/set_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="22dp"
+        android:text="开始定位"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/ba_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:text="提交店铺完整信息"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ba_addpicture"
+        android:layout_marginStart="55dp" />
+
+    <Button
+        android:id="@+id/ba_addpicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加店铺门面图（不可修改，仅能在注册时添加）"
+        android:layout_below="@+id/set_address"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

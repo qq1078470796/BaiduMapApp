@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/see_dining_picture"
+            android:layout_width="121dp"
+            android:layout_height="128dp"
+            app:srcCompat="@drawable/huaji" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="商品名：" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="商品价格：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/see_dining_name"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/see_dining_price"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/see_dining_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="购入"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

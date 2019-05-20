@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asuspc.baidumapapp"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".LocationApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="来啊！找吃的！">
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="aXIrvDbyvwuVU7MG3TRO3KVz4Eu4h9xK" /> <!-- http://lbsyun.baidu.com/apiconsole/key -->
+
+
+        <!-- meta-data需要写在application中 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="百度地图">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FindMyAndOther" />
+        <activity android:name="com.example.asuspc.ManageActivity.RegisterActivity" />
+        <activity android:name="com.example.asuspc.ManageActivity.LoginActivity" />
+        <activity android:name="com.example.asuspc.businessOwnerActivity.AddNewBusinessActivity" />
+        <activity
+            android:name="com.example.asuspc.businessOwnerActivity.ManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.asuspc.nomalUserActivity.SeeDetailActivity" />
+        <activity android:name=".LocationActivity" />
+        <activity android:name="com.example.asuspc.businessOwnerActivity.AddNewDiningActivity" />
+        <activity android:name="com.example.asuspc.businessOwnerActivity.ManageUserActivity" />
+        <activity android:name="com.example.asuspc.businessOwnerActivity.BusinessSeeMyActivity" />
+        <activity android:name="com.example.asuspc.businessOwnerActivity.SeeUserActivity"></activity>
+    </application>
+
+</manifest>

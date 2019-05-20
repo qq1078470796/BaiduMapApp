@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asuspc.businessOwnerActivity.AddNewDiningActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_centerVertical="true"
+        android:text="上传图片"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ad_dining_comeform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/ad_dinning_price"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ad_dinning_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/ad_dining_name"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ad_dining_name"
+        android:layout_alignBottom="@+id/ad_dining_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:text="套餐名称"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/ad_dining_name"
+        android:layout_marginTop="21dp"
+        android:text="套餐价格"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/ad_dinning_price"
+        android:layout_marginTop="30dp"
+        android:text="套餐创建者"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ad_dining_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/ad_dining_apicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ad_dining_comeform"
+        android:layout_centerVertical="true"
+        android:text="点击选择图片" />
+
+    <Button
+        android:id="@+id/ad_dining_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交套餐信息"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ad_dining_apicture" />
+
+    <ImageView
+        android:id="@+id/testImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad_dining_submit"
+        android:layout_alignStart="@+id/ad_dining_submit"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="32dp"
+        app:srcCompat="@drawable/huaji" />
+
+</RelativeLayout>
